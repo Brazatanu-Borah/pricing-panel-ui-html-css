@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Font Bold";
+  src: url("fonts/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Font Semi Bold";
+  src: url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Font Medium";
+  src: url("fonts/OpenSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Font Regular";
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: #27264b;
+  height: 100%;
+  font-family: "Font Medium";
+  color: #433f63;
+}
+
+#wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 100px 50px;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+#pricing-section {
+  margin: 0 auto;
+  display: flow-root;
+  width: 960px;
+}
+
+.pricing-panel {
+  float: left;
+  width: 31%;
+}
+
+.pricing-panel.panel-1 {
+  box-shadow: 0 30px 30px -20px rgba(194, 211, 255, 1);
+}
+
+.pricing-panel.panel-2 {
+  box-shadow: 0 30px 30px -12px rgba(178, 111, 254, 0.384);
+}
+
+.pricing-panel.panel-3 {
+  box-shadow: 0 30px 30px -12px rgba(255, 204, 109, 0.61);
+}
+
+.pricing-panel.panel-2,
+.pricing-panel.panel-3 {
+  margin-left: 33px;
+}
+
+h3,
+h4,
+button {
+  text-transform: uppercase;
+}
+
+.pricing-title {
+  margin: 5px;
+  padding: 18px;
+  border-radius: 3px;
+  font-family: "Font Regular";
+  margin-bottom: 30px;
+}
+
+.panel-2 .pricing-title {
+  background: linear-gradient(to right, #c3d4ff, #b26ffe);
+  color: #fefefe;
+}
+
+.panel-3 .pricing-title {
+  background: linear-gradient(to right, #ffb0c6, #ffcc6d);
+  color: #fefefe;
+}
+
+.pricing-content {
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.pricing-title,
+.pricing-desc,
+.pricing-label > small,
+button {
+  font-family: "Font Semi Bold";
+  font-size: 18px;
+}
+
+.pricing-label {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.pricing-label sup {
+  font-family: "Font Bold";
+  font-size: 20px;
+  position: absolute;
+}
+
+.panel-1 .pricing-label sup {
+  top: 7px;
+  left: 36px;
+}
+
+.panel-2 .pricing-label sup {
+  top: 7px;
+  left: 13px;
+}
+
+.panel-3 .pricing-label sup {
+  top: 7px;
+  left: 4px;
+}
+
+.pricing-label .amount {
+  font-family: "Font Bold";
+  font-size: 56px;
+}
+
+.pricing-content h4,
+.features li {
+  font-size: 16px;
+}
+
+.pricing-desc {
+  margin: 40px 2px 60px 2px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border: solid 1px #27264b;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+button:hover,
+button:focus {
+  background-color: #27264b;
+  color: #fefefe;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 30px;
+}
+
+li {
+  position: relative;
+  line-height: 2.5;
+}
+
+li.green-tick::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  color: rgb(1, 202, 61);
+}
+
+li.red-cross::before {
+  content: "\f00d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  color: rgb(228, 1, 39);
+  font-size: 20px;
+}
